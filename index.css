@@ -1,0 +1,144 @@
+
+body {
+    color: #ebdbb2;
+    font-family: 'Arvo', serif;
+
+    background-color: #282828;
+
+    min-width: 400px;
+    min-height: 600px;
+}
+
+a {
+    color: currentColor;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #504945;
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 10%;
+}
+
+main {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0%;
+    left: 0%;
+
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calc {
+
+    width: 360px;
+    height: 560px;
+
+    background-color: #32302f;
+
+    margin: auto;
+
+    border: 5px solid #504945;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    width: 320px;
+    height: 100px;
+    background-color: #ebdbb2;
+
+    border-style: solid;
+    border-color: #282828;
+    border-width: 10px;
+    border-radius: 15px;
+
+    position: relative;
+    top: 10px;
+    margin-bottom: 20px;
+}
+
+#buttonsGrid {
+    width: 320px;
+    height: 390px;
+
+    border-style: solid;
+    border-color: #282828;
+    border-width: 10px;
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: [r1] 77px [r2] 77px [r3] 77px [r4] 77px [rend];
+    grid-template-rows: 75px 75px 75px 75px 75px;
+    gap: 4px;
+}
+
+.buttons {
+    color: inherit;
+    background-color: inherit;
+    margin: 0px;
+
+    font-size: 140%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-style: outset;
+    border-color: #504945;
+    border-width: 3px;
+}
+
+.buttons:active {
+    border-style: inset;
+    border-color: #504945;
+}
+
+#zeroButton {
+    grid-column-start: r1;
+    grid-column-end: r3;
+}
+
+footer {
+    background-color: #504945;
+
+    min-width: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 10%;
+}
+
+footer ul {
+    position: absolute;
+    padding: 0px;
+    margin-right: 2em;
+    margin-left: 2em;
+    right: 2em;
+    left: 2em;
+    display: inline-flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
