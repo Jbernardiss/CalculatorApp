@@ -61,11 +61,16 @@ main {
 }
 
 #display {
-    width: 320px;
+
+    color: #282828;
+    width: 300px;
     height: 100px;
     background-color: #ebdbb2;
 
-    border-style: solid;
+    padding: 10px;
+
+
+    border-style: inset;
     border-color: #282828;
     border-width: 10px;
     border-radius: 15px;
@@ -73,6 +78,12 @@ main {
     position: relative;
     top: 10px;
     margin-bottom: 20px;
+
+    font-size: 250%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #buttonsGrid {
@@ -96,6 +107,7 @@ main {
     margin: 0px;
 
     font-size: 140%;
+
     display: flex;
     justify-content: center;
     align-items: center;
