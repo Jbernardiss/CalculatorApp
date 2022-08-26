@@ -95,6 +95,8 @@ main {
     border-width: 10px;
     border-radius: 15px;
 
+    margin-bottom: 10px;
+
     display: grid;
     grid-template-columns: [r1] 77px [r2] 77px [r3] 77px [r4] 77px [rend];
     grid-template-rows: 75px 75px 75px 75px 75px;

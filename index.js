@@ -121,7 +121,7 @@ let calc = {
             this.result = "Err"
         }
 
-        this.display.textContent = `${this.result}`
+        this.display.textContent = `${this.result}`.substring(0, 13)
     }
 }
 
