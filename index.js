@@ -116,6 +116,11 @@ let calc = {
             this.result = this.display.textContent
         }
 
+        // If incorrect inputs are entered this.result is going to be NaN or Infinite. This corrects the output in the display by printing Err 
+        if(isNaN(this.result) || !isFinite(this.result)) {
+            this.result = "Err"
+        }
+
         this.display.textContent = `${this.result}`
     }
 }
